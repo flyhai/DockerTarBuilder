@@ -31,7 +31,22 @@ https://www.bilibili.com/video/BV1yyq6YREdF
 > Windows 上推荐使用7zip<br>
 > macOS 推荐使用MacZip<br>
 > Linux上推荐直接用tar 命令
-
+解压
+# unzip docker-images-tar.zip
+Archive:  docker-images-tar.zip
+  inflating: x86-64-images.tar.gz    
+再解压：
+#tar -zxvf x86-64-images.tar.gz
+# ls -lh alpine:latest-amd64.tar
+-rw------- 1 mysql 127 7.8M 7月   4 16:57 alpine:latest-amd64.tar
+​
+导入
+# docker load < alpine:latest-amd64.tar
+​
+导入成功。
+# docker images
+REPOSITORY                                         TAG                 IMAGE ID            CREATED             SIZE
+alpine                                             latest              a606584aa9aa        13 days ago         7.8 MB
 ## ❤️其它GitHub Action项目推荐🌟 （建议收藏）⬇️
 https://github.com/wukongdaily/RunFilesBuilder
 ## 在哪里可以搜索或查询docker镜像的详细信息
